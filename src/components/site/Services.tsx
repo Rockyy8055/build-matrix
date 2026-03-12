@@ -15,8 +15,8 @@ function Card({ title, items }: Service) {
           <div className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 rounded-md sm:rounded-lg bg-white/30" />
         </div>
         <div className="flex-1">
-          <h3 className="text-lg sm:text-xl font-bold text-white">{title}</h3>
-          <ul className="mt-3 sm:mt-4 md:mt-5 grid gap-2 sm:gap-2.5 md:gap-3 text-sm sm:text-base text-gray-300">
+          <h3 className="text-lg sm:text-xl font-bold text-slate-900">{title}</h3>
+          <ul className="mt-3 sm:mt-4 md:mt-5 grid gap-2 sm:gap-2.5 md:gap-3 text-sm sm:text-base text-slate-600">
             {items.map((it) => (
               <li key={it} className="flex items-start gap-2 sm:gap-3">
                 <span className="mt-1.5 sm:mt-2 h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-gradient-to-br from-[var(--accent)] to-[var(--neon-purple)] flex-shrink-0" />
@@ -71,13 +71,13 @@ export function Services() {
       <Container>
         <FadeIn>
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-[var(--accent-light)]">
+            <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-blue-500">
               Services
             </p>
-            <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+            <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
               Built with <span className="gradient-text">precision</span>. Designed for life.
             </h2>
-            <p className="mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-gray-300">
+            <p className="mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-slate-600">
               From civil construction to premium interior finishes, Build Matrix
               delivers end-to-end solutions with quality-first execution.
             </p>

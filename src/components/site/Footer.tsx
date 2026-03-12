@@ -24,7 +24,7 @@ const services = [
 
 export function Footer() {
   return (
-    <footer className="glass-card relative overflow-hidden border-t border-white/10">
+    <footer className="glass-card relative overflow-hidden border-t border-slate-200">
       <Container className="py-10 sm:py-12 md:py-14 lg:py-16 relative">
         <div className="grid gap-8 sm:gap-10 lg:grid-cols-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
           <div className="lg:col-span-1 sm:col-span-2">
@@ -35,28 +35,28 @@ export function Footer() {
                 </span>
               </div>
               <div>
-                <div className="text-base sm:text-lg font-bold tracking-tight text-white">
+                <div className="text-base sm:text-lg font-bold tracking-tight text-slate-900">
                   Build Matrix
                 </div>
-                <div className="text-xs sm:text-sm font-medium text-gray-400">
+                <div className="text-xs sm:text-sm font-medium text-slate-500">
                   Construction & Interiors
                 </div>
               </div>
             </Link>
-            <p className="mt-4 sm:mt-5 text-sm sm:text-base leading-relaxed text-gray-300">
+            <p className="mt-4 sm:mt-5 text-sm sm:text-base leading-relaxed text-slate-600">
               Premium construction and interior design solutions for residential and
               commercial spaces.
             </p>
           </div>
 
           <div>
-            <div className="text-sm sm:text-base font-bold text-white">Quick Links</div>
+            <div className="text-sm sm:text-base font-bold text-slate-900">Quick Links</div>
             <div className="mt-4 sm:mt-5 grid gap-2 sm:gap-3">
               {quickLinks.map((l) => (
                 <a
                   key={l.href}
                   href={l.href}
-                  className="text-sm sm:text-base text-gray-300 hover:text-blue-400 transition-colors"
+                  className="text-sm sm:text-base text-slate-600 hover:text-blue-600 transition-colors"
                 >
                   {l.label}
                 </a>
@@ -65,10 +65,10 @@ export function Footer() {
           </div>
 
           <div>
-            <div className="text-sm sm:text-base font-bold text-white">Services</div>
+            <div className="text-sm sm:text-base font-bold text-slate-900">Services</div>
             <div className="mt-4 sm:mt-5 grid gap-2 sm:gap-3">
               {services.map((s) => (
-                <div key={s} className="text-sm sm:text-base text-gray-300">
+                <div key={s} className="text-sm sm:text-base text-slate-600">
                   {s}
                 </div>
               ))}
@@ -76,8 +76,8 @@ export function Footer() {
           </div>
 
           <div>
-            <div className="text-sm sm:text-base font-bold text-white">Contact</div>
-            <div className="mt-4 sm:mt-5 grid gap-2 sm:gap-3 text-sm sm:text-base text-gray-300">
+            <div className="text-sm sm:text-base font-bold text-slate-900">Contact</div>
+            <div className="mt-4 sm:mt-5 grid gap-2 sm:gap-3 text-sm sm:text-base text-slate-600">
               <div>+91 7411005186</div>
               <div>hello@buildmatrix.com</div>
               <div>Build Matrix, Main Road, Your City, India</div>
@@ -108,11 +108,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 sm:mt-12 md:mt-14 flex flex-col gap-2 sm:gap-3 sm:flex-row sm:items-center sm:justify-between border-t border-white/10 pt-6 sm:pt-7 md:pt-8">
-          <div className="text-xs sm:text-sm text-gray-500">
+        <div className="mt-10 sm:mt-12 md:mt-14 flex flex-col gap-2 sm:gap-3 sm:flex-row sm:items-center sm:justify-between border-t border-slate-200 pt-6 sm:pt-7 md:pt-8">
+          <div className="text-xs sm:text-sm text-slate-500">
             © {new Date().getFullYear()} Build Matrix. All rights reserved.
           </div>
-          <div className="text-xs sm:text-sm text-gray-500">
+          <div className="text-xs sm:text-sm text-slate-500">
             Designed for a modern construction brand.
           </div>
         </div>

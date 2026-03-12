@@ -8,25 +8,25 @@ function Stat({ label, value }: { label: string; value: string }) {
       <div className="text-2xl sm:text-2xl md:text-3xl font-bold tracking-tight gradient-text">
         {value}
       </div>
-      <div className="mt-1 sm:mt-2 text-sm sm:text-base font-medium text-gray-400">{label}</div>
+      <div className="mt-1 sm:mt-2 text-sm sm:text-base font-medium text-slate-500">{label}</div>
     </div>
   );
 }
 
 export function About() {
   return (
-    <Section id="about" className="bg-[var(--soft)] overflow-hidden">
+    <Section id="about" className="bg-[#f1f5f9] overflow-hidden">
       <Container>
         <div className="grid gap-8 sm:gap-10 lg:gap-12 lg:grid-cols-2 lg:items-center">
           <FadeIn>
             <div>
-              <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-[var(--accent-light)]">
+              <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-blue-500">
                 About
               </p>
-              <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+              <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
                 About <span className="gradient-text">Build Matrix</span>
               </h2>
-              <p className="mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-gray-300">
+              <p className="mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-slate-600">
                 Build Matrix is a professional construction and interior solutions
                 company delivering residential and commercial projects with
                 precision, quality materials, and modern design.
@@ -34,10 +34,10 @@ export function About() {
 
               <div className="mt-6 sm:mt-8 md:mt-10 grid gap-4 sm:gap-5">
                 <div className="card-3d glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-7">
-                  <div className="text-base sm:text-lg font-bold text-white">
+                  <div className="text-base sm:text-lg font-bold text-slate-900">
                     Mission
                   </div>
-                  <div className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-gray-300">
+                  <div className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
                     Deliver high-quality construction and interior outcomes through
                     disciplined execution, reliable craftsmanship, and thoughtful
                     design.
@@ -45,20 +45,20 @@ export function About() {
                 </div>
 
                 <div className="card-3d glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-7">
-                  <div className="text-base sm:text-lg font-bold text-white">
+                  <div className="text-base sm:text-lg font-bold text-slate-900">
                     Vision
                   </div>
-                  <div className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-gray-300">
+                  <div className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
                     Create timeless spaces that elevate everyday living and working
                     environments with modern, sustainable practices.
                   </div>
                 </div>
 
                 <div className="card-3d glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-7">
-                  <div className="text-base sm:text-lg font-bold text-white">
+                  <div className="text-base sm:text-lg font-bold text-slate-900">
                     Quality Commitment
                   </div>
-                  <div className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-gray-300">
+                  <div className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
                     We use trusted materials, transparent processes, and
                     on-site supervision to ensure a consistent premium finish.
                   </div>

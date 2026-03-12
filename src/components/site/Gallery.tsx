@@ -20,8 +20,8 @@ function Tile({ src }: { src: string }) {
         className="h-full w-full bg-cover bg-center aspect-[4/3] transition-transform duration-700 group-hover:scale-110"
         style={{ backgroundImage: `url(${src})` }}
       />
-      <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
-      <div className="absolute inset-0 ring-2 ring-transparent group-hover:ring-[var(--accent)]/30 transition-all duration-300 rounded-2xl sm:rounded-3xl" />
+      <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-t from-slate-900/40 via-slate-900/10 to-transparent" />
+      <div className="absolute inset-0 ring-2 ring-transparent group-hover:ring-blue-400/30 transition-all duration-300 rounded-2xl sm:rounded-3xl" />
     </div>
   );
 }
@@ -32,13 +32,13 @@ export function Gallery() {
       <Container>
         <FadeIn>
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-[var(--accent-light)]">
+            <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-blue-500">
               Gallery
             </p>
-            <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+            <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
               Modern construction and <span className="gradient-text">interior</span> finishes
             </h2>
-            <p className="mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-gray-300">
+            <p className="mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-slate-600">
               A curated grid of spaces—minimal, premium, and built for longevity.
             </p>
           </div>

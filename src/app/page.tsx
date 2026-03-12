@@ -12,7 +12,7 @@ import { Services } from "@/components/site/Services";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-[#0b0f19] text-[var(--foreground)] overflow-x-hidden">
+    <div className="min-h-screen w-full bg-[#f8fafc] text-[var(--foreground)] overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />

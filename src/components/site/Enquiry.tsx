@@ -6,37 +6,37 @@ import { Section } from "@/components/ui/Section";
 
 export function Enquiry() {
   return (
-    <Section id="enquiry" className="overflow-hidden">
+    <Section id="enquiry" className="bg-[#f1f5f9] overflow-hidden">
       <Container>
         <div className="grid gap-8 sm:gap-10 md:gap-12 lg:grid-cols-2 lg:items-center">
           <FadeIn>
             <div>
-              <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-[var(--accent-light)]">
+              <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-blue-500">
                 Enquiry
               </p>
-              <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+              <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
                 Tell us about your <span className="gradient-text">project</span>
               </h2>
-              <p className="mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-gray-300">
+              <p className="mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-slate-600">
                 Share a few details and our team will reach out with next steps,
                 timelines, and an estimate.
               </p>
 
               <div className="mt-6 sm:mt-8 md:mt-10 grid gap-4 sm:gap-5">
                 <div className="card-3d glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-7">
-                  <div className="text-base sm:text-lg font-bold text-white">
+                  <div className="text-base sm:text-lg font-bold text-slate-900">
                     What you get
                   </div>
-                  <div className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-gray-300">
+                  <div className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
                     A structured plan, transparent budget guidance, and premium
                     execution across construction and interiors.
                   </div>
                 </div>
                 <div className="card-3d glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-7">
-                  <div className="text-base sm:text-lg font-bold text-white">
+                  <div className="text-base sm:text-lg font-bold text-slate-900">
                     Typical turnaround
                   </div>
-                  <div className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-gray-300">
+                  <div className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
                     We respond within 24–48 hours with a consultation slot.
                   </div>
                 </div>
@@ -54,63 +54,63 @@ export function Enquiry() {
             >
               <div className="grid gap-4 sm:gap-5 sm:grid-cols-2">
                 <div className="grid gap-1.5 sm:gap-2">
-                  <label className="text-sm sm:text-base font-semibold text-white">
+                  <label className="text-sm sm:text-base font-semibold text-slate-900">
                     Name
                   </label>
                   <input
                     required
-                    className="h-11 sm:h-12 md:h-14 rounded-xl sm:rounded-2xl bg-white/6 border border-white/15 px-4 sm:px-5 text-sm sm:text-base text-white outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all placeholder:text-gray-400"
+                    className="h-11 sm:h-12 md:h-14 rounded-xl sm:rounded-2xl bg-white border border-slate-200 px-4 sm:px-5 text-sm sm:text-base text-slate-900 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-slate-400"
                     placeholder="Your full name"
                   />
                 </div>
                 <div className="grid gap-1.5 sm:gap-2">
-                  <label className="text-sm sm:text-base font-semibold text-white">
+                  <label className="text-sm sm:text-base font-semibold text-slate-900">
                     Phone Number
                   </label>
                   <input
                     required
-                    className="h-11 sm:h-12 md:h-14 rounded-xl sm:rounded-2xl bg-white/6 border border-white/15 px-4 sm:px-5 text-sm sm:text-base text-white outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all placeholder:text-gray-400"
+                    className="h-11 sm:h-12 md:h-14 rounded-xl sm:rounded-2xl bg-white border border-slate-200 px-4 sm:px-5 text-sm sm:text-base text-slate-900 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-slate-400"
                     placeholder="+91"
                   />
                 </div>
                 <div className="grid gap-1.5 sm:gap-2 sm:col-span-2">
-                  <label className="text-sm sm:text-base font-semibold text-white">
+                  <label className="text-sm sm:text-base font-semibold text-slate-900">
                     Email
                   </label>
                   <input
                     type="email"
                     required
-                    className="h-11 sm:h-12 md:h-14 rounded-xl sm:rounded-2xl bg-white/6 border border-white/15 px-4 sm:px-5 text-sm sm:text-base text-white outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all placeholder:text-gray-400"
+                    className="h-11 sm:h-12 md:h-14 rounded-xl sm:rounded-2xl bg-white border border-slate-200 px-4 sm:px-5 text-sm sm:text-base text-slate-900 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-slate-400"
                     placeholder="name@email.com"
                   />
                 </div>
                 <div className="grid gap-1.5 sm:gap-2 sm:col-span-2">
-                  <label className="text-sm sm:text-base font-semibold text-white">
+                  <label className="text-sm sm:text-base font-semibold text-slate-900">
                     Project Type
                   </label>
-                  <select className="h-11 sm:h-12 md:h-14 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 px-4 sm:px-5 text-sm sm:text-base text-white outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all appearance-none cursor-pointer dark-select">
-                    <option className="bg-[#111827] text-white">Residential Construction</option>
-                    <option className="bg-[#111827] text-white">Commercial Construction</option>
-                    <option className="bg-[#111827] text-white">Residential Interiors</option>
-                    <option className="bg-[#111827] text-white">Commercial Interiors</option>
-                    <option className="bg-[#111827] text-white">Turnkey Solution</option>
-                    <option className="bg-[#111827] text-white">Renovation / Remodeling</option>
+                  <select className="h-11 sm:h-12 md:h-14 rounded-xl sm:rounded-2xl bg-white border border-slate-200 px-4 sm:px-5 text-sm sm:text-base text-slate-900 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all appearance-none cursor-pointer dark-select">
+                    <option className="bg-white text-slate-900">Residential Construction</option>
+                    <option className="bg-white text-slate-900">Commercial Construction</option>
+                    <option className="bg-white text-slate-900">Residential Interiors</option>
+                    <option className="bg-white text-slate-900">Commercial Interiors</option>
+                    <option className="bg-white text-slate-900">Turnkey Solution</option>
+                    <option className="bg-white text-slate-900">Renovation / Remodeling</option>
                   </select>
                 </div>
                 <div className="grid gap-1.5 sm:gap-2 sm:col-span-2">
-                  <label className="text-sm sm:text-base font-semibold text-white">
+                  <label className="text-sm sm:text-base font-semibold text-slate-900">
                     Message
                   </label>
                   <textarea
                     rows={4}
-                    className="rounded-xl sm:rounded-2xl bg-white/6 border border-white/15 px-4 sm:px-5 py-3 sm:py-4 text-sm sm:text-base text-white outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all placeholder:text-gray-400"
+                    className="rounded-xl sm:rounded-2xl bg-white border border-slate-200 px-4 sm:px-5 py-3 sm:py-4 text-sm sm:text-base text-slate-900 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-slate-400"
                     placeholder="Tell us location, budget range, and timeline..."
                   />
                 </div>
               </div>
 
               <button
-                className="mt-5 sm:mt-6 md:mt-8 h-11 sm:h-12 md:h-14 w-full rounded-full bg-blue-600 text-white font-semibold text-sm sm:text-base md:text-lg shadow-lg transition-all duration-300 hover:bg-blue-500 hover:shadow-xl hover:-translate-y-0.5 btn-premium"
+                className="mt-5 sm:mt-6 md:mt-8 h-11 sm:h-12 md:h-14 w-full rounded-full bg-blue-500 text-white font-semibold text-sm sm:text-base md:text-lg shadow-lg transition-all duration-300 hover:bg-blue-600 hover:shadow-xl hover:-translate-y-0.5 btn-premium"
                 type="submit"
               >
                 Send Enquiry

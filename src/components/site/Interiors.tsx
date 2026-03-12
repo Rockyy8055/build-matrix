@@ -80,23 +80,23 @@ function InteriorCard({ project }: { project: InteriorProject }) {
           className="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
           style={{ backgroundImage: `url(${project.image})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent" />
       </div>
       <div className="p-4 sm:p-5 md:p-6">
         <div className="flex items-center justify-between gap-2">
           <div className="min-w-0 flex-1">
-            <div className="text-base sm:text-lg font-semibold text-white truncate">
+            <div className="text-base sm:text-lg font-semibold text-slate-900 truncate">
               {project.title}
             </div>
-            <div className="text-xs sm:text-sm text-gray-300 mt-1">
+            <div className="text-xs sm:text-sm text-slate-500 mt-1">
               {project.location}
             </div>
           </div>
           <div
             className={`px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 rounded-full text-[10px] sm:text-xs font-semibold flex-shrink-0 ${
               project.category === "residential"
-                ? "bg-blue-500/20 text-blue-300"
-                : "bg-purple-500/20 text-purple-300"
+                ? "bg-blue-100 text-blue-700"
+                : "bg-purple-100 text-purple-700"
             }`}
           >
             {project.category === "residential" ? "Residential" : "Commercial"}
@@ -116,17 +116,17 @@ export function Interiors() {
       : interiorProjects.filter((p) => p.category === activeTab);
 
   return (
-    <Section id="interiors" className="bg-[var(--soft)] overflow-hidden">
+    <Section id="interiors" className="bg-[#f1f5f9] overflow-hidden">
       <Container>
         <FadeIn>
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-[var(--accent-light)]">
+            <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-blue-500">
               Interiors
             </p>
-            <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+            <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
               Our <span className="gradient-text">Interior</span> Works
             </h2>
-            <p className="mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-gray-300">
+            <p className="mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-slate-600">
               Explore our curated collection of residential and commercial interior
               projects crafted with precision and modern aesthetics.
             </p>
@@ -145,8 +145,8 @@ export function Interiors() {
                 onClick={() => setActiveTab(tab.key as typeof activeTab)}
                 className={`px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 ${
                   activeTab === tab.key
-                    ? "bg-blue-600 text-white shadow-lg"
-                    : "glass-card text-gray-300 hover:bg-white/15"
+                    ? "bg-blue-500 text-white shadow-lg"
+                    : "glass-card text-slate-600 hover:bg-slate-100"
                 }`}
               >
                 {tab.label}
