@@ -88,13 +88,13 @@ export function Enquiry() {
                   <label className="text-sm sm:text-base font-semibold text-white">
                     Project Type
                   </label>
-                  <select className="h-11 sm:h-12 md:h-14 rounded-xl sm:rounded-2xl bg-white/6 border border-white/15 px-4 sm:px-5 text-sm sm:text-base text-white outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
-                    <option>Residential Construction</option>
-                    <option>Commercial Construction</option>
-                    <option>Residential Interiors</option>
-                    <option>Commercial Interiors</option>
-                    <option>Turnkey Solution</option>
-                    <option>Renovation / Remodeling</option>
+                  <select className="h-11 sm:h-12 md:h-14 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 px-4 sm:px-5 text-sm sm:text-base text-white outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all appearance-none cursor-pointer dark-select">
+                    <option className="bg-[#111827] text-white">Residential Construction</option>
+                    <option className="bg-[#111827] text-white">Commercial Construction</option>
+                    <option className="bg-[#111827] text-white">Residential Interiors</option>
+                    <option className="bg-[#111827] text-white">Commercial Interiors</option>
+                    <option className="bg-[#111827] text-white">Turnkey Solution</option>
+                    <option className="bg-[#111827] text-white">Renovation / Remodeling</option>
                   </select>
                 </div>
                 <div className="grid gap-1.5 sm:gap-2 sm:col-span-2">

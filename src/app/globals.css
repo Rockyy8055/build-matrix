@@ -124,6 +124,28 @@ textarea::placeholder {
   color: #9ca3af;
 }
 
+/* Dark Select Dropdown */
+.dark-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23e5e7eb' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}
+
+.dark-select option {
+  background-color: #111827;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+}
+
+.dark-select option:hover,
+.dark-select option:focus,
+.dark-select option:checked {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
 html {
   scroll-behavior: smooth;
 }
