@@ -4,7 +4,7 @@ import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { Gallery } from "@/components/site/Gallery";
 import { Hero } from "@/components/site/Hero";
-import { Inquiry } from "@/components/site/Inquiry";
+import { Enquiry } from "@/components/site/Enquiry";
 import { Interiors } from "@/components/site/Interiors";
 import { Navbar } from "@/components/site/Navbar";
 import { Projects } from "@/components/site/Projects";
@@ -21,7 +21,7 @@ export default function Home() {
         <Interiors />
         <Projects />
         <Gallery />
-        <Inquiry />
+        <Enquiry />
         <Careers />
         <Contact />
       </main>

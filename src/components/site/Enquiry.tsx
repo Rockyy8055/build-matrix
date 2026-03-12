@@ -4,15 +4,15 @@ import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Section } from "@/components/ui/Section";
 
-export function Inquiry() {
+export function Enquiry() {
   return (
-    <Section id="inquiry" className="overflow-hidden">
+    <Section id="enquiry" className="overflow-hidden">
       <Container>
         <div className="grid gap-8 sm:gap-10 md:gap-12 lg:grid-cols-2 lg:items-center">
           <FadeIn>
             <div>
               <p className="text-xs sm:text-sm md:text-base uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold text-[var(--accent-light)]">
-                Inquiry
+                Enquiry
               </p>
               <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
                 Tell us about your <span className="gradient-text">project</span>
@@ -113,7 +113,7 @@ export function Inquiry() {
                 className="mt-5 sm:mt-6 md:mt-8 h-11 sm:h-12 md:h-14 w-full rounded-full bg-blue-600 text-white font-semibold text-sm sm:text-base md:text-lg shadow-lg transition-all duration-300 hover:bg-blue-500 hover:shadow-xl hover:-translate-y-0.5 btn-premium"
                 type="submit"
               >
-                Send Inquiry
+                Send Enquiry
               </button>
             </form>
           </FadeIn>
