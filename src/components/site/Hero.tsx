@@ -12,21 +12,21 @@ export function Hero() {
               "url(https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=2200&q=80)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-white/90 via-white/80 to-blue-100/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#f8fafc] via-transparent to-white/50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-slate-900/50 to-blue-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#f8fafc] via-transparent to-slate-900/30" />
       </div>
 
       <Container className="relative z-10 flex min-h-screen items-center py-20 sm:py-0">
         <div className="mx-auto max-w-4xl text-center px-2 sm:px-0">
-          <p className="text-blue-600 text-xs sm:text-sm md:text-base tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] uppercase font-semibold">
+          <p className="text-blue-400 text-xs sm:text-sm md:text-base tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] uppercase font-semibold">
             Build Matrix
           </p>
-          <h1 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-slate-900 leading-tight">
+          <h1 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-tight drop-shadow-lg">
             Creating{" "}
             <span className="gradient-text">Impactful</span>{" "}
             Spaces
           </h1>
-          <p className="mt-4 sm:mt-6 md:mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-slate-600 max-w-xl sm:max-w-2xl mx-auto">
+          <p className="mt-4 sm:mt-6 md:mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-slate-200 max-w-xl sm:max-w-2xl mx-auto drop-shadow-md">
             End-to-end construction and interior solutions built with precision and
             innovation.
           </p>
@@ -41,15 +41,15 @@ export function Hero() {
           </div>
 
           <div className="mt-10 sm:mt-12 md:mt-16 grid grid-cols-1 gap-3 sm:gap-4 md:gap-4 sm:grid-cols-3">
-            <div className="card-3d glass-card rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-4 sm:py-5">
+            <div className="card-3d glass-card rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-4 sm:py-5 bg-white/95 backdrop-blur-md">
               <div className="text-slate-900 text-lg sm:text-xl md:text-2xl font-bold">12+ Years</div>
               <div className="text-slate-500 text-sm sm:text-base mt-1">Industry Expertise</div>
             </div>
-            <div className="card-3d glass-card rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-4 sm:py-5">
+            <div className="card-3d glass-card rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-4 sm:py-5 bg-white/95 backdrop-blur-md">
               <div className="text-slate-900 text-lg sm:text-xl md:text-2xl font-bold">Quality First</div>
               <div className="text-slate-500 text-sm sm:text-base mt-1">Materials & Finishes</div>
             </div>
-            <div className="card-3d glass-card rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-4 sm:py-5">
+            <div className="card-3d glass-card rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-4 sm:py-5 bg-white/95 backdrop-blur-md">
               <div className="text-slate-900 text-lg sm:text-xl md:text-2xl font-bold">Turnkey</div>
               <div className="text-slate-500 text-sm sm:text-base mt-1">Design to Delivery</div>
             </div>
