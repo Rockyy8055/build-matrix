@@ -69,7 +69,7 @@ export function About() {
 
           <FadeIn delayMs={120}>
             <div className="grid gap-4 sm:gap-5 sm:grid-cols-2">
-              <Stat label="Years of Expertise" value="12+" />
+              <Stat label="Years of Expertise" value="25+" />
               <Stat label="Projects Delivered" value="150+" />
               <Stat label="Residential + Commercial" value="End-to-End" />
               <Stat label="Site Supervision" value="Dedicated" />

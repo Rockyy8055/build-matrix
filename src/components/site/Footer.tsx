@@ -79,7 +79,7 @@ export function Footer() {
             <div className="text-sm sm:text-base font-bold text-slate-900">Contact</div>
             <div className="mt-4 sm:mt-5 grid gap-2 sm:gap-3 text-sm sm:text-base text-slate-600">
               <div>+91 7411005186</div>
-              <div>hello@buildmatrix.com</div>
+              <div>ibuildmatrix@gmail.com</div>
               <div>Build Matrix, Main Road, Your City, India</div>
               <div className="mt-4 sm:mt-5 flex items-center gap-2 sm:gap-3">
                 <a

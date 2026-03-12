@@ -42,7 +42,7 @@ export function Hero() {
 
           <div className="mt-10 sm:mt-12 md:mt-16 grid grid-cols-1 gap-3 sm:gap-4 md:gap-4 sm:grid-cols-3">
             <div className="card-3d glass-card rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-4 sm:py-5 bg-white/95 backdrop-blur-md">
-              <div className="text-slate-900 text-lg sm:text-xl md:text-2xl font-bold">12+ Years</div>
+              <div className="text-slate-900 text-lg sm:text-xl md:text-2xl font-bold">25+ Years</div>
               <div className="text-slate-500 text-sm sm:text-base mt-1">Industry Expertise</div>
             </div>
             <div className="card-3d glass-card rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-4 sm:py-5 bg-white/95 backdrop-blur-md">

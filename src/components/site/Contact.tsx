@@ -32,7 +32,7 @@ export function Contact() {
                 <div className="card-3d glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-7">
                   <div className="text-base sm:text-lg font-bold text-slate-900">Email</div>
                   <div className="mt-2 sm:mt-3 text-sm sm:text-base text-slate-600">
-                    hello@buildmatrix.com
+                    ibuildmatrix@gmail.com
                   </div>
                 </div>
 
