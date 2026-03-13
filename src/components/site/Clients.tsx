@@ -67,8 +67,8 @@ const clients = {
     "mantri",
   ],
   "Banking": [
-    "centurion",
-    "axis",
+    "centurion-bank",
+    "axis-bank",
     "standard-chartered",
   ],
   "Industrial": [
@@ -88,10 +88,6 @@ const clients = {
     "boulevard-villa-project",
     "phoenix-apartments",
   ],
-  "Construction": [
-    "bus-stand-project",
-    "sudhamnagar",
-  ],
 };
 
 const categories: ClientCategory[] = [
@@ -108,7 +104,6 @@ const categories: ClientCategory[] = [
   "Retail Showrooms",
   "Fitness",
   "Residential",
-  "Construction",
 ];
 
 function ClientLogo({ name }: { name: string }) {
