@@ -114,11 +114,11 @@ const categories: ClientCategory[] = [
 function ClientLogo({ name }: { name: string }) {
   return (
     <div className="group relative overflow-hidden rounded-xl glass-card p-4 sm:p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10 aspect-square">
-      <div className="flex items-center justify-center w-full h-full min-h-[60px] sm:min-h-[80px]">
+      <div className="flex items-center justify-center w-full h-full">
         <img
           src={`/clients/images/${name}.webp`}
           alt={`${name} logo`}
-          className="h-14 object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+          className="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.style.display = "none";
