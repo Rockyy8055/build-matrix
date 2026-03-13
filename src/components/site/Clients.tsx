@@ -30,7 +30,7 @@ const clients = {
   ],
   "Healthcare": [
     "cultfit",
-    "kaveri-hospital",
+    "kaveri-hospitals",
     "novex-health",
   ],
   "Corporate Office": [
@@ -76,20 +76,20 @@ const clients = {
   ],
   "Retail Showrooms": [
     "reliance-trends",
-    "jack-jones",
+    "jack-and-jones",
     "benetton",
     "kfc",
     "5-star",
   ],
   "Fitness": [
-    "cult-fit",
+    "cultfit",
   ],
   "Residential": [
-    "boulevard-villa",
+    "boulevard-villa-project",
     "phoenix-apartments",
   ],
   "Construction": [
-    "bus-stand",
+    "bus-stand-project",
     "sudhamnagar",
   ],
 };
