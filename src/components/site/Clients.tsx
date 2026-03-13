@@ -181,19 +181,19 @@ function ClientLogo({ name }: { name: string }) {
   const logoSrc = logoMap[name] || `/images/clients/${name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}.png`;
   
   return (
-    <div className="group relative overflow-hidden rounded-xl glass-card p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10">
-      <div className="flex items-center justify-center h-[50px]">
+    <div className="group relative overflow-hidden rounded-xl glass-card p-4 sm:p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10 aspect-square">
+      <div className="flex items-center justify-center w-full h-full min-h-[60px] sm:min-h-[80px]">
         <img
           src={logoSrc}
           alt={`${name} logo`}
-          className="max-h-[50px] max-w-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+          className="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300 p-2"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.style.display = "none";
             target.nextElementSibling?.classList.remove("hidden");
           }}
         />
-        <div className="hidden text-slate-600 text-sm font-medium text-center">
+        <div className="hidden text-slate-600 text-xs sm:text-sm font-medium text-center px-2">
           {name}
         </div>
       </div>
