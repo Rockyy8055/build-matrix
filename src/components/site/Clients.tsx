@@ -7,67 +7,71 @@ import { Section } from "@/components/ui/Section";
 
 type ClientCategory = keyof typeof clients;
 
-const domainMap: Record<string, string> = {
+// Logo file mapping - add your logo files to /public/images/clients/
+// Naming convention: lowercase, spaces replaced with hyphens, .png format
+// Example: "Google" -> "/images/clients/google.png"
+const logoMap: Record<string, string> = {
   // Major Projects
-  "Google": "google.com",
-  "Reliance Industries": "reliance.com",
-  "Cognizant": "cognizant.com",
-  "Philips Innovation": "philips.com",
-  "Honeywell": "honeywell.com",
-  "Mindtree": "mindtree.com",
-  "Cisco": "cisco.com",
-  "Dell": "dell.com",
-  "HP": "hp.com",
+  "Google": "/images/clients/google.png",
+  "Reliance Industries": "/images/clients/reliance-industries.png",
+  "Cognizant": "/images/clients/cognizant.png",
+  "Philips Innovation": "/images/clients/philips.png",
+  "Honeywell": "/images/clients/honeywell.png",
+  "Mindtree": "/images/clients/mindtree.png",
+  "Cisco": "/images/clients/cisco.png",
+  "Dell": "/images/clients/dell.png",
+  "HP": "/images/clients/hp.png",
   // Others
-  "Axis Bank": "axisbank.com",
-  "Centurion Bank": "centurionbank.com",
-  "May Bank": "maybank.com",
+  "Axis Bank": "/images/clients/axis-bank.png",
+  "Centurion Bank": "/images/clients/centurion-bank.png",
+  "May Bank": "/images/clients/may-bank.png",
   // Retail
-  "Benetton": "benetton.com",
+  "Benetton": "/images/clients/benetton.png",
   // Healthcare
-  "Cultfit": "cult.fit",
-  "Kaveri Hospital": "kaverihospitals.com",
-  "Novex Health": "novexhealth.com",
+  "Cultfit": "/images/clients/cultfit.png",
+  "Kaveri Hospital": "/images/clients/kaveri-hospital.png",
+  "Novex Health": "/images/clients/novex-health.png",
   // Corporate Office
-  "GE": "ge.com",
-  "Accenture": "accenture.com",
-  "Samsung": "samsung.com",
-  "WeWork": "wework.com",
-  "SimplyWorks": "simplyworks.com",
-  "SmartWorks": "smartworks.com",
+  "GE": "/images/clients/ge.png",
+  "Accenture": "/images/clients/accenture.png",
+  "Samsung": "/images/clients/samsung.png",
+  "WeWork": "/images/clients/wework.png",
+  "SimplyWorks": "/images/clients/simplyworks.png",
+  "SmartWorks": "/images/clients/smartworks.png",
   // Hotels
-  "Premier Inn": "premierinn.com",
-  "Novartis": "novartis.com",
+  "Premier Inn": "/images/clients/premier-inn.png",
+  "Novartis": "/images/clients/novartis.png",
   // Hospital
-  "Apollo": "apollohospitals.com",
-  "Know6 Health": "know6.com",
+  "Apollo": "/images/clients/apollo.png",
+  "Kaveri Hospitals": "/images/clients/kaveri-hospitals.png",
+  "Know6 Health": "/images/clients/know6-health.png",
   // Builders
-  "IVRCL": "ivrcl.com",
-  "GMR": "gmrgroup.in",
-  "Embassy": "embassygroup.com",
-  "Bagmane": "bagmane.com",
-  "DLF": "dlf.in",
-  "Divyasree": "divyasree.com",
-  "Mantri": "mantri.com",
+  "IVRCL": "/images/clients/ivrcl.png",
+  "GMR": "/images/clients/gmr.png",
+  "Embassy": "/images/clients/embassy.png",
+  "Bagmane": "/images/clients/bagmane.png",
+  "DLF": "/images/clients/dlf.png",
+  "Divyasree": "/images/clients/divyasree.png",
+  "Mantri": "/images/clients/mantri.png",
   // Banking
-  "Centurion": "centurionbank.com",
-  "Axis": "axisbank.com",
-  "Standard Chartered": "sc.com",
+  "Centurion": "/images/clients/centurion.png",
+  "Axis": "/images/clients/axis.png",
+  "Standard Chartered": "/images/clients/standard-chartered.png",
   // Industrial
-  "Brilliant Printers": "brilliantprinters.com",
+  "Brilliant Printers": "/images/clients/brilliant-printers.png",
   // Retail Showrooms
-  "Reliance Trends": "relianceretail.com",
-  "Jack & Jones": "jackjones.com",
-  "KFC": "kfc.com",
-  "5 Star": "5star.in",
+  "Reliance Trends": "/images/clients/reliance-trends.png",
+  "Jack & Jones": "/images/clients/jack-jones.png",
+  "KFC": "/images/clients/kfc.png",
+  "5 Star": "/images/clients/5-star.png",
   // Fitness
-  "Cult Fit": "cult.fit",
+  "Cult Fit": "/images/clients/cult-fit.png",
   // Residential
-  "Boulevard Villa Project": "boulevard.com",
-  "Phoenix Apartments": "phoenix.com",
+  "Boulevard Villa Project": "/images/clients/boulevard-villa.png",
+  "Phoenix Apartments": "/images/clients/phoenix-apartments.png",
   // Construction
-  "Bus Stand Project": "project.com",
-  "Sudhamnagar": "sudhamnagar.com",
+  "Bus Stand Project": "/images/clients/bus-stand.png",
+  "Sudhamnagar": "/images/clients/sudhamnagar.png",
 };
 
 const clients = {
@@ -174,14 +178,13 @@ const categories: ClientCategory[] = [
 ];
 
 function ClientLogo({ name }: { name: string }) {
-  const domain = domainMap[name] || "example.com";
-  const logoUrl = `https://logo.clearbit.com/${domain}?size=100&format=png`;
+  const logoSrc = logoMap[name] || `/images/clients/${name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}.png`;
   
   return (
     <div className="group relative overflow-hidden rounded-xl glass-card p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10">
       <div className="flex items-center justify-center h-[50px]">
         <img
-          src={logoUrl}
+          src={logoSrc}
           alt={`${name} logo`}
           className="max-h-[50px] max-w-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
           onError={(e) => {
