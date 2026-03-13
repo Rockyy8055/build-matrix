@@ -1,5 +1,6 @@
 import { About } from "@/components/site/About";
 import { Careers } from "@/components/site/Careers";
+import { Clients } from "@/components/site/Clients";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { Gallery } from "@/components/site/Gallery";
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
+        <Clients />
         <Interiors />
         <Projects />
         <Gallery />
