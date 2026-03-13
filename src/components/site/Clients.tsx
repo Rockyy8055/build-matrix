@@ -7,156 +7,90 @@ import { Section } from "@/components/ui/Section";
 
 type ClientCategory = keyof typeof clients;
 
-// Logo file mapping - add your logo files to /public/images/clients/
-// Naming convention: lowercase, spaces replaced with hyphens, .png format
-// Example: "Google" -> "/images/clients/google.png"
-const logoMap: Record<string, string> = {
-  // Major Projects
-  "Google": "/images/clients/google.png",
-  "Reliance Industries": "/images/clients/reliance-industries.png",
-  "Cognizant": "/images/clients/cognizant.png",
-  "Philips Innovation": "/images/clients/philips.png",
-  "Honeywell": "/images/clients/honeywell.png",
-  "Mindtree": "/images/clients/mindtree.png",
-  "Cisco": "/images/clients/cisco.png",
-  "Dell": "/images/clients/dell.png",
-  "HP": "/images/clients/hp.png",
-  // Others
-  "Axis Bank": "/images/clients/axis-bank.png",
-  "Centurion Bank": "/images/clients/centurion-bank.png",
-  "May Bank": "/images/clients/may-bank.png",
-  // Retail
-  "Benetton": "/images/clients/benetton.png",
-  // Healthcare
-  "Cultfit": "/images/clients/cultfit.png",
-  "Kaveri Hospital": "/images/clients/kaveri-hospital.png",
-  "Novex Health": "/images/clients/novex-health.png",
-  // Corporate Office
-  "GE": "/images/clients/ge.png",
-  "Accenture": "/images/clients/accenture.png",
-  "Samsung": "/images/clients/samsung.png",
-  "WeWork": "/images/clients/wework.png",
-  "SimplyWorks": "/images/clients/simplyworks.png",
-  "SmartWorks": "/images/clients/smartworks.png",
-  // Hotels
-  "Premier Inn": "/images/clients/premier-inn.png",
-  "Novartis": "/images/clients/novartis.png",
-  // Hospital
-  "Apollo": "/images/clients/apollo.png",
-  "Kaveri Hospitals": "/images/clients/kaveri-hospitals.png",
-  "Know6 Health": "/images/clients/know6-health.png",
-  // Builders
-  "IVRCL": "/images/clients/ivrcl.png",
-  "GMR": "/images/clients/gmr.png",
-  "Embassy": "/images/clients/embassy.png",
-  "Bagmane": "/images/clients/bagmane.png",
-  "DLF": "/images/clients/dlf.png",
-  "Divyasree": "/images/clients/divyasree.png",
-  "Mantri": "/images/clients/mantri.png",
-  // Banking
-  "Centurion": "/images/clients/centurion.png",
-  "Axis": "/images/clients/axis.png",
-  "Standard Chartered": "/images/clients/standard-chartered.png",
-  // Industrial
-  "Brilliant Printers": "/images/clients/brilliant-printers.png",
-  // Retail Showrooms
-  "Reliance Trends": "/images/clients/reliance-trends.png",
-  "Jack & Jones": "/images/clients/jack-jones.png",
-  "KFC": "/images/clients/kfc.png",
-  "5 Star": "/images/clients/5-star.png",
-  // Fitness
-  "Cult Fit": "/images/clients/cult-fit.png",
-  // Residential
-  "Boulevard Villa Project": "/images/clients/boulevard-villa.png",
-  "Phoenix Apartments": "/images/clients/phoenix-apartments.png",
-  // Construction
-  "Bus Stand Project": "/images/clients/bus-stand.png",
-  "Sudhamnagar": "/images/clients/sudhamnagar.png",
-};
-
+// Clients data - file names match /public/images/{name}.webp
 const clients = {
   "Major Projects": [
-    "Google",
-    "Reliance Industries",
-    "Cognizant",
-    "Philips Innovation",
-    "Honeywell",
-    "Mindtree",
-    "Cisco",
-    "Dell",
-    "HP",
+    "google",
+    "reliance-industries",
+    "cognizant",
+    "philips-innovation",
+    "honeywell",
+    "mindtree",
+    "cisco",
+    "dell",
+    "hp",
   ],
   "Others": [
-    "Axis Bank",
-    "Centurion Bank",
-    "May Bank",
+    "axis-bank",
+    "centurion-bank",
+    "may-bank",
   ],
   "Retail": [
-    "Benetton",
+    "benetton",
   ],
   "Healthcare": [
-    "Cultfit",
-    "Kaveri Hospital",
-    "Novex Health",
+    "cultfit",
+    "kaveri-hospital",
+    "novex-health",
   ],
   "Corporate Office": [
-    "Google",
-    "Cisco",
-    "Mindtree",
-    "Cognizant",
-    "GE",
-    "Philips Innovation",
-    "Honeywell",
-    "Accenture",
-    "HP",
-    "Samsung",
-    "WeWork",
-    "SimplyWorks",
-    "SmartWorks",
+    "google",
+    "cisco",
+    "mindtree",
+    "cognizant",
+    "ge",
+    "philips-innovation",
+    "honeywell",
+    "accenture",
+    "hp",
+    "samsung",
+    "wework",
+    "simplyworks",
+    "smartworks",
   ],
   "Hotels": [
-    "Premier Inn",
-    "Novartis",
+    "premier-inn",
+    "novartis",
   ],
   "Hospital": [
-    "Apollo",
-    "Kaveri Hospitals",
-    "Know6 Health",
+    "apollo",
+    "kaveri-hospitals",
+    "know6-health",
   ],
   "Builders": [
-    "IVRCL",
-    "GMR",
-    "Embassy",
-    "Bagmane",
-    "DLF",
-    "Divyasree",
-    "Mantri",
+    "ivrcl",
+    "gmr",
+    "embassy",
+    "bagmane",
+    "dlf",
+    "divyasree",
+    "mantri",
   ],
   "Banking": [
-    "Centurion",
-    "Axis",
-    "Standard Chartered",
+    "centurion",
+    "axis",
+    "standard-chartered",
   ],
   "Industrial": [
-    "Brilliant Printers",
+    "brilliant-printers",
   ],
   "Retail Showrooms": [
-    "Reliance Trends",
-    "Jack & Jones",
-    "Benetton",
-    "KFC",
-    "5 Star",
+    "reliance-trends",
+    "jack-jones",
+    "benetton",
+    "kfc",
+    "5-star",
   ],
   "Fitness": [
-    "Cult Fit",
+    "cult-fit",
   ],
   "Residential": [
-    "Boulevard Villa Project",
-    "Phoenix Apartments",
+    "boulevard-villa",
+    "phoenix-apartments",
   ],
   "Construction": [
-    "Bus Stand Project",
-    "Sudhamnagar",
+    "bus-stand",
+    "sudhamnagar",
   ],
 };
 
@@ -178,23 +112,21 @@ const categories: ClientCategory[] = [
 ];
 
 function ClientLogo({ name }: { name: string }) {
-  const logoSrc = logoMap[name] || `/images/clients/${name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}.png`;
-  
   return (
     <div className="group relative overflow-hidden rounded-xl glass-card p-4 sm:p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10 aspect-square">
       <div className="flex items-center justify-center w-full h-full min-h-[60px] sm:min-h-[80px]">
         <img
-          src={logoSrc}
+          src={`/images/${name}.webp`}
           alt={`${name} logo`}
-          className="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300 p-2"
+          className="h-14 object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.style.display = "none";
             target.nextElementSibling?.classList.remove("hidden");
           }}
         />
-        <div className="hidden text-slate-600 text-xs sm:text-sm font-medium text-center px-2">
-          {name}
+        <div className="hidden text-slate-600 text-xs sm:text-sm font-medium text-center px-2 capitalize">
+          {name.replace(/-/g, ' ')}
         </div>
       </div>
     </div>
