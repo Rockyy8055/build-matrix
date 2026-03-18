@@ -112,7 +112,7 @@ function ClientLogo({ name }: { name: string }) {
       <img
         src={`/clients/images/${name}.webp`}
         alt={`${name} logo`}
-        className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+        className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain transition-all duration-300"
         onError={(e) => {
           const target = e.target as HTMLImageElement;
           target.style.display = "none";
