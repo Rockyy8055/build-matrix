@@ -38,10 +38,12 @@ export function Navbar() {
     >
       <div className="flex h-16 sm:h-18 md:h-20 items-center justify-between w-full px-4 sm:px-6 md:px-8">
         <Link href="#home" className="flex items-center gap-2 sm:gap-3">
-          <div className="h-10 w-10 sm:h-11 sm:w-11 md:h-12 md:w-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[var(--accent)] to-[var(--accent-dark)] shadow-lg grid place-items-center ring-2 ring-blue-200">
-            <span className="text-xs sm:text-sm font-bold tracking-tight text-white">
-              BM
-            </span>
+          <div className="h-10 w-10 sm:h-11 sm:w-11 md:h-12 md:w-12 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg ring-2 ring-blue-200">
+            <img
+              src="/images/clients/Buildmatrix logo.jpeg"
+              alt="Build Matrix Logo"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="leading-tight">
             <div
