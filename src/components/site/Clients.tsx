@@ -20,14 +20,6 @@ const clients = {
     "dell",
     "hp",
   ],
-  "Others": [
-    "axis-bank",
-    "centurion-bank",
-    "may-bank",
-  ],
-  "Retail": [
-    "benetton",
-  ],
   "Healthcare": [
     "cultfit",
     "kaveri-hospitals",
@@ -88,12 +80,16 @@ const clients = {
     "boulevard-villa-project",
     "phoenix-apartments",
   ],
+  "Others & Retails": [
+    "axis-bank",
+    "centurion-bank",
+    "may-bank",
+    "benetton",
+  ],
 };
 
 const categories: ClientCategory[] = [
   "Major Projects",
-  "Others",
-  "Retail",
   "Healthcare",
   "Corporate Office",
   "Hotels",
@@ -104,6 +100,7 @@ const categories: ClientCategory[] = [
   "Retail Showrooms",
   "Fitness",
   "Residential",
+  "Others & Retails",
 ];
 
 function ClientLogo({ name }: { name: string }) {
