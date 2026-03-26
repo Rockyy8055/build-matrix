@@ -9,8 +9,8 @@ export default function AnimatedLogo() {
       <Image
         src="/clients/images/BMlogo.svg"
         alt="Build Matrix"
-        width={120}
-        height={48}
+        width={160}
+        height={64}
         className="object-contain"
         priority
       />
