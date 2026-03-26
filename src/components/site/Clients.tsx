@@ -128,7 +128,7 @@ export function Clients() {
   // Auto-scroll through categories every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveTab((prev) => {
+      setActiveTab((prev: ClientCategory) => {
         const currentIndex = categories.indexOf(prev);
         const nextIndex = (currentIndex + 1) % categories.length;
         return categories[nextIndex];

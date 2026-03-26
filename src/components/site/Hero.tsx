@@ -28,7 +28,7 @@ export function Hero() {
           </h1>
           <p className="mt-4 sm:mt-6 md:mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-slate-200 max-w-xl sm:max-w-2xl mx-auto drop-shadow-md">
             End-to-end construction and interior solutions built with precision and
-            innovation.
+            innovation. Commercial & Residential.
           </p>
 
           <div className="mt-8 sm:mt-10 md:mt-12 flex flex-col items-center justify-center gap-3 sm:gap-4 sm:flex-row">
@@ -47,11 +47,11 @@ export function Hero() {
             </div>
             <div className="card-3d glass-card rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-4 sm:py-5 bg-white/95 backdrop-blur-md">
               <div className="text-slate-900 text-lg sm:text-xl md:text-2xl font-bold">Quality First</div>
-              <div className="text-slate-500 text-sm sm:text-base mt-1">Materials & Finishes</div>
+              <div className="text-slate-500 text-sm sm:text-base mt-1">Civil & Interiors</div>
             </div>
             <div className="card-3d glass-card rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-4 sm:py-5 bg-white/95 backdrop-blur-md">
               <div className="text-slate-900 text-lg sm:text-xl md:text-2xl font-bold">Turnkey</div>
-              <div className="text-slate-500 text-sm sm:text-base mt-1">Design to Delivery</div>
+              <div className="text-slate-500 text-sm sm:text-base mt-1">Commercial & Residential</div>
             </div>
           </div>
         </div>

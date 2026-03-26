@@ -30,20 +30,20 @@ function Card({ subtitle, title, description }: Service) {
 const services: Service[] = [
   {
     subtitle: "",
-    title: "Residential Interior",
-    description: "Residential interior is the art of designing and furnishing the interiors of homes to look and function better. We cover all kinds of projects to make them amazing. From modern apartments to cozy cottages, independent houses, bungalows, flats, apartments, and villas. Contact us today for a consultation!",
+    title: "Corporate Interior",
+    description: "Build Matrix also covers corporate interior fit-out services. We cover all types of commercial projects, from regular corporate buildings to fancy meeting rooms, shopping malls, industrial parks, and more. Contact us today for a consultation and take your commercial projects to the next level!",
+  },
+  {
+    subtitle: "",
+    title: "Retail Interior",
+    description: "Retail interior fit-out means creating attractive and functional interiors for stores and shops. Our expertise covers various retail projects, from boutiques to supermarkets. People choose our retail interior fit-out service because we make shopping spaces more appealing and profitable.",
   },
   {
     subtitle: "",
     title: "Industrial Interior",
     description: "Industrial interior fit-out means improving the design and functionality of industrial spaces like factories, warehouses, and offices. We have expertise and experience in a wide range of industrial projects. Choose Build Matrix for industrial interior fit-out services. Contact us today for a consultation!",
   },
-  {
-    subtitle: "",
-    title: "Corporate Interior",
-    description: "Build Matrix also covers corporate interior fit-out services. We cover all types of commercial projects, from regular corporate buildings to fancy meeting rooms, shopping malls, industrial parks, and more. Contact us today for a consultation and take your commercial projects to the next level!",
-  },
-  {
+   {
     subtitle: "",
     title: "Hospitality Interior",
     description: "Build Matrix also specializes in creating stunning hospitality interior fit-outs. We're experts in designing hotels, restaurants, bars, lounges, event spaces, and more. We transform spaces into remarkable experiences – choose us for outstanding hospitality interior service. Join our satisfied client list.",
@@ -53,10 +53,11 @@ const services: Service[] = [
     title: "Institutional Interior",
     description: "Institutional interior involves customizing and furnishing interior spaces like schools, hospitals, government buildings, and offices. We have the expertise to transform these diverse projects. If you want to improve your institutional space, contact us today for institutional interior fit-out service.",
   },
+  
   {
     subtitle: "",
-    title: "Retail Interior",
-    description: "Retail interior fit-out means creating attractive and functional interiors for stores and shops. Our expertise covers various retail projects, from boutiques to supermarkets. People choose our retail interior fit-out service because we make shopping spaces more appealing and profitable.",
+    title: "Residential Interior",
+    description: "Residential interior is the art of designing and furnishing the interiors of homes to look and function better. We cover all kinds of projects to make them amazing. From modern apartments to cozy cottages, independent houses, bungalows, flats, apartments, and villas. Contact us today for a consultation!",
   },
 ];
 

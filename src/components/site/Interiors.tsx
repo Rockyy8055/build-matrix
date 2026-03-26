@@ -137,8 +137,8 @@ export function Interiors() {
           <div className="mt-6 sm:mt-8 md:mt-10 flex flex-wrap justify-center gap-2 sm:gap-3">
             {[
               { key: "all", label: "All Projects" },
-              { key: "residential", label: "Residential" },
               { key: "commercial", label: "Commercial" },
+              { key: "residential", label: "Residential" },
             ].map((tab) => (
               <button
                 key={tab.key}
