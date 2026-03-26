@@ -8,7 +8,7 @@ export default function Loader() {
   const [phase, setPhase] = useState<"draw" | "logo">("draw");
 
   useEffect(() => {
-    const timer = setTimeout(() => setPhase("logo"), 2600);
+    const timer = setTimeout(() => setPhase("logo"), 2500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -19,57 +19,56 @@ export default function Loader() {
       transition={{ duration: 0.5 }}
     >
       {phase === "draw" && (
-        <motion.svg
-          viewBox="0 0 600 200"
-          width="320"
-          initial="hidden"
-          animate="visible"
-          className="overflow-visible"
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="relative"
         >
-          <motion.text
-            x="50%"
-            y="50%"
-            textAnchor="middle"
-            dominantBaseline="middle"
-            fill="none"
-            stroke="white"
-            strokeWidth="1.5"
-            fontSize="42"
-            fontWeight="bold"
-            letterSpacing="8"
-            fontFamily="system-ui, -apple-system, sans-serif"
-            initial={{ pathLength: 0, opacity: 0 }}
-            animate={{ pathLength: 1, opacity: 1 }}
-            transition={{
-              pathLength: { duration: 2.2, ease: "easeInOut" },
-              opacity: { duration: 0.3 }
-            }}
-          >
-            BUILD MATRIX
-          </motion.text>
+          {/* BASE SVG (hidden fill) */}
+          <svg viewBox="0 0 600 200" width="320">
+            <text
+              x="50%"
+              y="50%"
+              textAnchor="middle"
+              dominantBaseline="middle"
+              fill="none"
+              stroke="rgba(255,255,255,0.15)"
+              strokeWidth="1.5"
+              fontSize="42"
+              fontWeight="bold"
+              letterSpacing="8"
+              fontFamily="system-ui, -apple-system, sans-serif"
+            >
+              BUILD MATRIX
+            </text>
+          </svg>
 
-          {/* Glow effect */}
-          <motion.text
-            x="50%"
-            y="50%"
-            textAnchor="middle"
-            dominantBaseline="middle"
-            fill="none"
-            stroke="rgba(59, 130, 246, 0.5)"
-            strokeWidth="3"
-            fontSize="42"
-            fontWeight="bold"
-            letterSpacing="8"
-            fontFamily="system-ui, -apple-system, sans-serif"
-            initial={{ pathLength: 0, opacity: 0 }}
-            animate={{ pathLength: 1, opacity: [0, 0.8, 0] }}
-            transition={{
-              pathLength: { duration: 2.2, ease: "easeInOut" },
-              opacity: { duration: 2.5, times: [0, 0.8, 1] }
-            }}
-            style={{ filter: "blur(4px)" }}
-          />
-        </motion.svg>
+          {/* DRAWING STROKE OVERLAY */}
+          <motion.svg
+            viewBox="0 0 600 200"
+            width="320"
+            className="absolute top-0 left-0"
+          >
+            <motion.text
+              x="50%"
+              y="50%"
+              textAnchor="middle"
+              dominantBaseline="middle"
+              fill="none"
+              stroke="white"
+              strokeWidth="1.5"
+              fontSize="42"
+              fontWeight="bold"
+              letterSpacing="8"
+              fontFamily="system-ui, -apple-system, sans-serif"
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{ duration: 2.2, ease: "easeInOut" }}
+            >
+              BUILD MATRIX
+            </motion.text>
+          </motion.svg>
+        </motion.div>
       )}
 
       {phase === "logo" && (

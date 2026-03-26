@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export default function AnimatedLogo() {
   return (
-    <motion.div layoutId="main-logo" className="brightness-0 invert">
+    <motion.div layoutId="main-logo">
       <Image
         src="/clients/images/BMlogo.svg"
         alt="Build Matrix"
         width={200}
         height={80}
-        className="object-contain"
+        className="object-contain brightness-0 invert"
         priority
       />
     </motion.div>

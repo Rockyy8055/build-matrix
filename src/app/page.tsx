@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <>
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {loading && <Loader />}
       </AnimatePresence>
 
