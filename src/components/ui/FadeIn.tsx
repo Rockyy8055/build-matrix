@@ -7,9 +7,15 @@ type Props = {
   children: React.ReactNode;
   className?: string;
   delayMs?: number;
+  direction?: "up" | "right" | "left";
 };
 
-export function FadeIn({ children, className, delayMs = 0 }: Props) {
+export function FadeIn({
+  children,
+  className,
+  delayMs = 0,
+  direction = "up",
+}: Props) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
 
@@ -31,12 +37,24 @@ export function FadeIn({ children, className, delayMs = 0 }: Props) {
     return () => io.disconnect();
   }, []);
 
+  const getTransformClass = () => {
+    if (visible) return "opacity-100 translate-x-0 translate-y-0";
+    switch (direction) {
+      case "right":
+        return "opacity-0 -translate-x-8";
+      case "left":
+        return "opacity-0 translate-x-8";
+      default:
+        return "opacity-0 translate-y-4";
+    }
+  };
+
   return (
     <div
       ref={ref}
       className={cn(
         "transition-all duration-700 will-change-transform",
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4",
+        getTransformClass(),
         className
       )}
       style={{ transitionDelay: `${delayMs}ms` }}

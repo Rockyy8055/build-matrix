@@ -177,7 +177,7 @@ export function Clients() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5 md:gap-6">
           {filteredClients.map((client, idx) => (
-            <FadeIn key={`${activeTab}-${client}-${idx}`} delayMs={idx * 50}>
+            <FadeIn key={`${activeTab}-${client}-${idx}`} delayMs={idx * 50} direction="right">
               <ClientLogo name={client} />
             </FadeIn>
           ))}
