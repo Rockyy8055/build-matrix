@@ -107,10 +107,21 @@ const categories: ClientCategory[] = [
 ];
 
 function ClientLogo({ name }: { name: string }) {
+  // Map specific clients to their PNG versions in /images/clients/
+  const pngClients: Record<string, string> = {
+    "cisco": "/images/clients/cisco .png",
+    "honeywell": "/images/clients/Honeywell.png",
+    "hp": "/images/clients/hp.png",
+    "kaveri-hospitals": "/images/clients/Kauvery hospital.png",
+    "wework": "/images/clients/Wework.png",
+  };
+
+  const imgSrc = pngClients[name] || `/clients/images/${name}.webp`;
+
   return (
     <div className="flex items-center justify-center">
       <img
-        src={`/clients/images/${name}.webp`}
+        src={imgSrc}
         alt={`${name} logo`}
         className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain transition-all duration-300"
         onError={(e) => {
