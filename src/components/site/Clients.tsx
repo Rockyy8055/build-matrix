@@ -114,6 +114,7 @@ function ClientLogo({ name }: { name: string }) {
     "hp": "/images/clients/hp.png",
     "kaveri-hospitals": "/images/clients/Kauvery hospital.png",
     "wework": "/images/clients/Wework.png",
+    "reliance-industries": "/images/clients/Relaince.png",
   };
 
   const imgSrc = pngClients[name] || `/clients/images/${name}.webp`;
