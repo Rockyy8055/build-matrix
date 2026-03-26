@@ -17,7 +17,7 @@ const items = [
   { label: "Contact Us", href: "#contact" },
 ] as const;
 
-export function Navbar() {
+export function Navbar({ hideLogo = false }: { hideLogo?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -37,7 +37,7 @@ export function Navbar() {
       )}
     >
       <div className="flex h-16 sm:h-18 md:h-20 items-center justify-between w-full px-4 sm:px-6 md:px-8">
-        <Link href="#home" className="flex items-center gap-2 sm:gap-3">
+        <Link href="#home" className={cn("flex items-center gap-2 sm:gap-3 transition-opacity duration-500", hideLogo ? "opacity-0" : "opacity-100")}>
           <div className="h-10 w-10 sm:h-11 sm:w-11 md:h-12 md:w-12 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg ring-2 ring-blue-200">
             <img
               src="/images/clients/Buildmatrix logo.jpeg"
