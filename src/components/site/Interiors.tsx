@@ -15,17 +15,10 @@ type InteriorProject = {
 
 const interiorProjects: InteriorProject[] = [
   {
-    title: "Modern Villa Interior",
-    location: "Bengaluru",
-    image:
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=80",
-    category: "residential",
-  },
-  {
     title: "Luxury Apartment",
     location: "Mumbai",
     image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c2f11c0?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1512918766671-ad650b9b732d?auto=format&fit=crop&w=1800&q=80",
     category: "residential",
   },
   {
@@ -39,15 +32,8 @@ const interiorProjects: InteriorProject[] = [
     title: "Premium Penthouse",
     location: "Pune",
     image:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa9cbe8?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c2f11c0?auto=format&fit=crop&w=1800&q=80",
     category: "residential",
-  },
-  {
-    title: "Tech Startup Hub",
-    location: "Chennai",
-    image:
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=80",
-    category: "commercial",
   },
   {
     title: "Contemporary Home",
@@ -64,10 +50,17 @@ const interiorProjects: InteriorProject[] = [
     category: "commercial",
   },
   {
-    title: "Minimalist Studio",
+    title: "Minimal Apartment",
     location: "Kochi",
     image:
-      "https://images.unsplash.com/photo-1600573472550-80a0d0b76a54?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+    category: "residential",
+  },
+  {
+    title: "Residential Interiors",
+    location: "Mumbai",
+    image:
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=80",
     category: "residential",
   },
 ];
