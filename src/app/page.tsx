@@ -15,7 +15,6 @@ import { Navbar } from "@/components/site/Navbar";
 import { Projects } from "@/components/site/Projects";
 import { Services } from "@/components/site/Services";
 import Loader from "@/components/Loader";
-import AnimatedLogo from "@/components/AnimatedLogo";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -31,11 +30,9 @@ export default function Home() {
         {loading && <Loader key="loader" />}
       </AnimatePresence>
 
-      <AnimatedLogo isLoaded={!loading} />
-
       {!loading && (
         <div className="animate-fadeIn">
-          <Navbar hideLogo={true} />
+          <Navbar />
           <main className="bg-black text-white min-h-screen">
             <Hero />
             <About />

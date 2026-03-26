@@ -60,14 +60,14 @@ export default function Loader() {
           className="relative z-10"
         >
           {/* Main Logo */}
-          <div className="relative overflow-hidden rounded-lg">
+          <div className="relative">
             <Image
               src="/images/clients/logo.png"
-              alt="Build Matrix Logo"
-              width={200}
-              height={80}
+              alt="Build Matrix"
+              width={160}
+              height={60}
               priority
-              className="relative z-10"
+              className="object-contain"
             />
             
             {/* Shimmer Overlay (Phase 2) */}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { cn } from "@/lib/cn";
 import { Container } from "@/components/ui/Container";
+import AnimatedLogo from "@/components/AnimatedLogo";
 
 const items = [
   { label: "Home", href: "#home" },
@@ -37,19 +38,8 @@ export function Navbar({ hideLogo = false }: { hideLogo?: boolean }) {
       )}
     >
       <div className="flex w-full items-center justify-between px-6">
-        <div className="flex items-center gap-3">
-          {/* Logo container for AnimatedLogo to land in */}
-          <div className="w-[80px] h-[32px] invisible pointer-events-none">
-            {/* This space is occupied by AnimatedLogo via fixed positioning */}
-          </div>
-          <Link href="#home" className={cn("leading-tight transition-opacity duration-500", hideLogo ? "opacity-0" : "opacity-100")}>
-            <div className="text-lg font-bold tracking-tight text-white">
-              Build Matrix
-            </div>
-            <div className="text-sm font-medium hidden sm:block text-slate-400">
-              Construction & Interiors
-            </div>
-          </Link>
+        <div className="h-[70px] flex items-center">
+          <AnimatedLogo isLoaded={true} />
         </div>
 
         <nav className="hidden lg:flex items-center gap-8">
