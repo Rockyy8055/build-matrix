@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Section } from "@/components/ui/Section";
@@ -124,6 +124,19 @@ function ClientLogo({ name }: { name: string }) {
 
 export function Clients() {
   const [activeTab, setActiveTab] = useState<ClientCategory>("Major Projects");
+
+  // Auto-scroll through categories every 2 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveTab((prev) => {
+        const currentIndex = categories.indexOf(prev);
+        const nextIndex = (currentIndex + 1) % categories.length;
+        return categories[nextIndex];
+      });
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const filteredClients = clients[activeTab];
 
