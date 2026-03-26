@@ -1,10 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Easing } from "framer-motion";
 
 export function LogoSVG({ className }: { className?: string }) {
   const strokeWidth = 1.5;
-  const transition = {
+  const transition: { duration: number; ease: Easing } = {
     duration: 2,
     ease: "easeInOut",
   };
