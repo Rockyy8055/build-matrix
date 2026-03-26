@@ -7,7 +7,7 @@ export default function AnimatedLogo() {
   return (
     <motion.div layoutId="main-logo">
       <Image
-        src="/images/clients/logo.png"
+        src="/clients/images/BMlogo.svg"
         alt="Build Matrix"
         width={120}
         height={48}
