@@ -39,14 +39,14 @@ const interiorProjects: InteriorProject[] = [
     title: "Contemporary Home",
     location: "Delhi",
     image:
-      "https://images.unsplash.com/photo-1600585154340-7deb409bcbcb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
     category: "residential",
   },
   {
     title: "Restaurant Interior",
     location: "Goa",
     image:
-      "https://images.unsplash.com/photo-1517248135467-085f403eea86?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80",
     category: "commercial",
   },
   {
