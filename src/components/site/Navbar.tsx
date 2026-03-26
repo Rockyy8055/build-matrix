@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { cn } from "@/lib/cn";
-import { Container } from "@/components/ui/Container";
+import AnimatedLogo from "@/components/AnimatedLogo";
 
 const items = [
   { label: "Home", href: "#home" },
@@ -37,8 +37,10 @@ export function Navbar() {
       )}
     >
       <div className="flex w-full items-center justify-between px-6">
-        {/* Logo placeholder - AnimatedLogo will overlay here via fixed positioning */}
-        <div className="w-[108px] h-[42px]" />
+        {/* LEFT SIDE LOGO */}
+        <div className="flex items-center h-full">
+          <AnimatedLogo />
+        </div>
 
         <nav className="hidden lg:flex items-center gap-8">
           {items.map((it) => (

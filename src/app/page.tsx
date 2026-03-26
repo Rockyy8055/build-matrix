@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { About } from "@/components/site/About";
 import { Careers } from "@/components/site/Careers";
 import { Clients } from "@/components/site/Clients";
@@ -15,23 +15,20 @@ import { Navbar } from "@/components/site/Navbar";
 import { Projects } from "@/components/site/Projects";
 import { Services } from "@/components/site/Services";
 import Loader from "@/components/Loader";
-import AnimatedLogo from "@/components/AnimatedLogo";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2500);
+    const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
-      <AnimatePresence mode="wait">
-        {loading && <Loader key="loader" />}
+      <AnimatePresence>
+        {loading && <Loader />}
       </AnimatePresence>
-
-      <AnimatedLogo isLoaded={!loading} />
 
       {!loading && (
         <div className="animate-fadeIn">
