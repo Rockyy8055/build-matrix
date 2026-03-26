@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { cn } from "@/lib/cn";
 import { Container } from "@/components/ui/Container";
-import AnimatedLogo from "@/components/AnimatedLogo";
 
 const items = [
   { label: "Home", href: "#home" },
@@ -17,7 +16,7 @@ const items = [
   { label: "Contact Us", href: "#contact" },
 ] as const;
 
-export function Navbar({ hideLogo = false }: { hideLogo?: boolean }) {
+export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -38,9 +37,8 @@ export function Navbar({ hideLogo = false }: { hideLogo?: boolean }) {
       )}
     >
       <div className="flex w-full items-center justify-between px-6">
-        <div className="h-[70px] flex items-center">
-          <AnimatedLogo isLoaded={true} />
-        </div>
+        {/* Logo placeholder - AnimatedLogo will overlay here via fixed positioning */}
+        <div className="w-[108px] h-[42px]" />
 
         <nav className="hidden lg:flex items-center gap-8">
           {items.map((it) => (

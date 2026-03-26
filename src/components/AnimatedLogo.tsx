@@ -7,20 +7,21 @@ export default function AnimatedLogo({ isLoaded }: { isLoaded: boolean }) {
   return (
     <motion.div
       layoutId="main-logo"
-      className="fixed z-50"
+      className="fixed"
+      style={{ zIndex: isLoaded ? 40 : 60 }}
       initial={{
         top: "50%",
         left: "50%",
-        translateX: "-50%",
-        translateY: "-50%",
+        x: "-50%",
+        y: "-50%",
         scale: 1,
       }}
       animate={{
-        top: isLoaded ? 18 : "50%",
-        left: isLoaded ? 32 : "50%",
-        translateX: isLoaded ? 0 : "-50%",
-        translateY: isLoaded ? 0 : "-50%",
-        scale: isLoaded ? 0.55 : 1,
+        top: isLoaded ? 14 : "50%",
+        left: isLoaded ? 24 : "50%",
+        x: isLoaded ? 0 : "-50%",
+        y: isLoaded ? 0 : "-50%",
+        scale: isLoaded ? 0.6 : 1,
       }}
       transition={{
         duration: 1,
@@ -30,8 +31,8 @@ export default function AnimatedLogo({ isLoaded }: { isLoaded: boolean }) {
       <Image
         src="/images/clients/logo.png"
         alt="Build Matrix"
-        width={160}
-        height={60}
+        width={180}
+        height={70}
         className="object-contain"
         priority
       />
