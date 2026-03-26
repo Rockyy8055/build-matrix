@@ -1,37 +1,40 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { LogoSVG } from "./ui/LogoSVG";
+import Image from "next/image";
 
-export function AnimatedLogo({ isLoaded }: { isLoaded: boolean }) {
+export default function AnimatedLogo({ isLoaded }: { isLoaded: boolean }) {
   return (
     <motion.div
-      initial={{ 
+      layoutId="main-logo"
+      initial={{
         position: "fixed",
         top: "50%",
         left: "50%",
         x: "-50%",
         y: "-50%",
         scale: 1,
-        zIndex: 60
+        zIndex: 60,
       }}
       animate={{
-        top: isLoaded ? "2.5rem" : "50%",
-        left: isLoaded ? "2.5rem" : "50%",
+        top: isLoaded ? "20px" : "50%",
+        left: isLoaded ? "40px" : "50%",
         x: isLoaded ? "0%" : "-50%",
-        y: isLoaded ? "-50%" : "-50%",
-        scale: isLoaded ? 0.25 : 1,
-        transition: { 
-          duration: 1.2, 
-          ease: [0.76, 0, 0.24, 1], // Custom Apple-style ease
-          delay: 0.1 
-        }
+        y: isLoaded ? "0%" : "-50%",
+        scale: isLoaded ? 0.4 : 1,
+        transition: {
+          duration: 1,
+          ease: "easeInOut",
+        },
       }}
-      className="pointer-events-none"
     >
-      <div className="text-white">
-        <LogoSVG className="w-64 h-64 md:w-96 md:h-96" />
-      </div>
+      <Image
+        src="/images/clients/logo.png"
+        alt="Build Matrix Logo"
+        width={200}
+        height={80}
+        priority
+      />
     </motion.div>
   );
 }
