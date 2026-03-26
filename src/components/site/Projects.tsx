@@ -15,42 +15,42 @@ const projects: Project[] = [
     type: "Residential Construction",
     location: "Bengaluru",
     image:
-      "https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
   },
   {
     title: "Steel & Stone Office",
     type: "Commercial Interiors",
     location: "Hyderabad",
     image:
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80",
   },
   {
     title: "Modern Retail Fitout",
     type: "Interior Fitouts",
     location: "Pune",
     image:
-      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
   },
   {
     title: "Courtyard Villa",
     type: "Turnkey Construction",
     location: "Chennai",
     image:
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
   },
   {
     title: "Minimal Apartment",
     type: "Residential Interiors",
     location: "Mumbai",
     image:
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3b2f85?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
   },
   {
     title: "Structural Upgrade",
     type: "Engineering + Supervision",
     location: "Coimbatore",
     image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
   },
 ];
 

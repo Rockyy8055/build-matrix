@@ -18,49 +18,49 @@ const interiorProjects: InteriorProject[] = [
     title: "Luxury Apartment",
     location: "Mumbai",
     image:
-      "https://images.unsplash.com/photo-1512918766671-ad650b9b732d?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
     category: "residential",
   },
   {
     title: "Corporate Office Space",
     location: "Hyderabad",
     image:
-      "https://images.unsplash.com/photo-1497366210384-9bbd5fc66f6f?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80",
     category: "commercial",
   },
   {
     title: "Premium Penthouse",
     location: "Pune",
     image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c2f11c0?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
     category: "residential",
   },
   {
     title: "Contemporary Home",
     location: "Delhi",
     image:
-      "https://images.unsplash.com/photo-1600585154340-7deb409bcbcb?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-7deb409bcbcb?auto=format&fit=crop&w=1200&q=80",
     category: "residential",
   },
   {
     title: "Restaurant Interior",
     location: "Goa",
     image:
-      "https://images.unsplash.com/photo-1517248135467-085f403eea86?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1517248135467-085f403eea86?auto=format&fit=crop&w=1200&q=80",
     category: "commercial",
   },
   {
     title: "Minimal Apartment",
     location: "Kochi",
     image:
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
     category: "residential",
   },
   {
     title: "Residential Interiors",
     location: "Mumbai",
     image:
-      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
     category: "residential",
   },
 ];
