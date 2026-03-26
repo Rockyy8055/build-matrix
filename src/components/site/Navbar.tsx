@@ -32,7 +32,7 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300 h-[70px] flex items-center",
+        "fixed inset-x-0 top-0 z-50 transition-all duration-300 h-[90px] flex items-center",
         scrolled ? "bg-slate-900/80 backdrop-blur-md border-b border-white/10" : "bg-transparent"
       )}
     >
