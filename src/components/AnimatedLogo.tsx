@@ -17,13 +17,13 @@ export default function AnimatedLogo({ isLoaded }: { isLoaded: boolean }) {
         zIndex: 60,
       }}
       animate={{
-        top: isLoaded ? "20px" : "50%",
-        left: isLoaded ? "40px" : "50%",
+        top: isLoaded ? "18px" : "50%",
+        left: isLoaded ? "24px" : "50%",
         x: isLoaded ? "0%" : "-50%",
         y: isLoaded ? "0%" : "-50%",
-        scale: isLoaded ? 0.4 : 1,
+        scale: isLoaded ? 0.45 : 1,
         transition: {
-          duration: 1,
+          duration: 0.9,
           ease: "easeInOut",
         },
       }}
